@@ -1,0 +1,34 @@
+      UCF COP3330 Fall 2021 Assignment 3 Pseudocode
+            Copyright 2021 Nikolai Coletta
+
+-----------------------------------------------------------
+
+Exercise 41 will be all contained within one class, App.
+App will consist of four functions.
+
+The program's objective is to take in a text file as input,
+store all lines as separate strings called "names", then
+sort them alphabetically, and prints them to an output text
+file.
+
+pseudocode:
+
+App {
+    void main ()
+        // configures input and output text files
+        // runs other functions
+        // stores key variables
+
+    ArrayList<String> createNameList (Scanner)
+        // reads each line from the scanner input
+        // stores each line as a string in an arraylist
+        // sorts name list using sortNameList function
+
+    ArrayList<String> sortNameList (ArrayList<String>)
+        // takes in list of strings and sorts them
+
+    void outputNameList(ArrayList<String>, FileWriter)
+        // takes in list of strings and filewriter
+        // formats output and writes entire arraylist
+}
+

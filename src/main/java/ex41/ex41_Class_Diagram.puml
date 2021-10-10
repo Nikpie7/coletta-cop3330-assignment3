@@ -1,0 +1,12 @@
+@startuml
+App <|-- AppTest
+
+App : static void main(String[] args) throws IOException
+App : public static ArrayList<String> createNameList(Scanner scan) throws IOException
+App : public static ArrayList<String> sortNameList(ArrayList<String> arr)
+App : public static void outputNameList(ArrayList<String> arr, FileWriter myFile) throws IOException
+
+AppTest : void createNameList() throws IOException
+AppTest : void sortNameList()
+AppTest : void outputNameList() throws IOException
+@enduml
