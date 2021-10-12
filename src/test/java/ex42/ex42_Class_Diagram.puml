@@ -1,0 +1,15 @@
+@startuml
+Person <|-- App
+App <|-- AppTest
+
+Person : private String firstName, lastName
+Person : private int salary
+Person : public Person(String first, String last, int sal)
+Person : String getFirst()
+Person : String getLast()
+Person : int getSalary()
+App : public static void main(String[] args)
+App : public static ArrayList<Person> getPersonArray(Scanner scan)
+App : public static void printPersonArray(ArrayList<Person> P)
+AppTest : void getPersonArray()
+@enduml

@@ -1,0 +1,44 @@
+      UCF COP3330 Fall 2021 Assignment 3 Pseudocode
+            Copyright 2021 Nikolai Coletta
+
+-----------------------------------------------------------
+
+Exercise 42 will be all contained within two classes, App and Person.
+
+The program's objective is to take in a text file as input,
+take in line inputs and separate it out and store each piece of
+data in their respective location. Then, the data is printed in an
+organized table.
+
+pseudocode:
+
+App {
+    main()
+        //creates person arraylist
+        //holds io file variables
+        //calls functions to output
+
+    ArrayList<Person> createPersonArray(Scanner scan)
+        //takes in scanner and creates a person per line of input
+        //stores all person instances in an arraylist
+
+    printPersonArray(ArrayList<Person> P)
+        //formats all persons in the arraylist in a table
+}
+
+Person {
+    //holds private variables for firstname, lastname, and salary
+
+    Person(String first, String last, int Salary)
+        // constructs person object, takes in data to be stored in each instance
+
+    String getFirst()
+        //getter function returns firstname of person
+
+    String getLast()
+        //getter function returns lastname of person
+
+    int getSalary()
+        //getter function returns salary of person
+
+}
