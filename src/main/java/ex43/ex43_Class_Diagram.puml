@@ -1,0 +1,16 @@
+@startuml
+Website <|-- App
+App <|-- AppTest
+
+Website : private String mySite, myAuthor;
+Website : private boolean myJSS, myCSS;
+Website : public Website(String site, String author, boolean JSS, boolean CSS)
+Website : public String getSite()
+Website : public String getAuthor()
+Website : public boolean getJSS()
+Website : public boolean getCSS()
+Website : public void generateOutput() throws IOException
+App : public static void main(String[] args) throws IOException
+App : static Website getWebsite(Scanner scan)
+AppTest : void getWebsite()
+@enduml

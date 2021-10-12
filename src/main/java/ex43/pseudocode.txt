@@ -1,0 +1,42 @@
+      UCF COP3330 Fall 2021 Assignment 3 Pseudocode
+            Copyright 2021 Nikolai Coletta
+
+-----------------------------------------------------------
+
+Exercise 43 will be all contained within two classes, App
+and Website.
+
+The program's objective is to generate a basic website taking
+in the user's input as basic parameters for the website. All
+the website's information will be stored in an instance of
+the class, Website, and the output will be completed from a
+function within this instance.
+
+pseudocode:
+
+App {
+    void main ()
+        //creates the website using the function below
+        //generates output using the Website function
+
+    Website getWebsite(Scanner scan)
+        //takes in the user input through a scanner
+        //creates a website object from the scanner
+}
+
+Website {
+    //holds private variables for the site name, author, js folder, and css folder
+
+    Website(String site, String author, boolean js, boolean css)
+        //takes in parameters above and stores locally
+
+    //all the following functions return the respective value for the website- used for unit testing.
+    String getSite()
+    String getAuthor()
+    boolean getJSS()
+    boolean getCSS()
+
+    void generateOutput()
+        //using the private variables, creates the appropriate directories and files
+}
+

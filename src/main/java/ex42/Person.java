@@ -1,3 +1,8 @@
+/*
+ *  UCF COP3330 Fall 2021 Assignment 3 Solution
+ *  Copyright 2021 Nikolai Coletta
+ */
+
 package ex42;
 
 public class Person {
