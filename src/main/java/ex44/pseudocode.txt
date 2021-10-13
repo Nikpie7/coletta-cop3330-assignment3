@@ -1,0 +1,53 @@
+     UCF COP3330 Fall 2021 Assignment 3 Pseudocode
+            Copyright 2021 Nikolai Coletta
+
+-----------------------------------------------------------
+
+Exercise 44 will be all contained within three classes, App,
+Inventory, and Product.
+
+The program's objective is to take in a JSON file as input,
+and create an Inventory from it, which stores an array of
+Product objects. Then, the user inputs the name of a product
+for it to be retrieved from the array and printed.
+
+pseudocode:
+
+App {
+    void main()
+        // configures input and gson objects
+        // creates inventory
+        // runs methods to generate output
+
+    void mainLoop(Product[] P, Scanner scan)
+        //recursive function that loops with invalid input
+        //runs search function to find the correct object
+        //runs print function to generate output
+
+    Product searchProduct(Product[] P, String name)
+        //searches product array for a product with a name value equal to the input string name
+        //returns null if product does not exist
+
+    public static void printProduct(Product p)
+        //prints out all data of a product
+}
+
+Inventory {
+    //creates an array of products private variable
+
+    //the following are getter and setter functions that manage the private variable
+    Product[] getProducts()
+    setProducts( Product[] products )
+}
+
+Product {
+    //creates private variables for name, price, and quantity
+
+    //the following functions are getter and setter functions, managing private variables
+    String getName()
+    double getPrice()
+    int getQuantity()
+    void setName(String name)
+    void setPrice(double price)
+    void setName(int quantity)
+}

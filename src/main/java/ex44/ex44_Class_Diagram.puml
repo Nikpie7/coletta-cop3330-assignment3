@@ -1,0 +1,24 @@
+@startuml
+Product <|-- Inventory
+Product <|-- App
+Inventory <|-- App
+App <|-- AppTest
+
+Product : private String name
+Product : private double price
+Product : private int quantity
+Product : public String getName()
+Product : public double getPrice()
+Product : public int getQuantity()
+Product : public void setName(String name)
+Product : public void setPrice(double price)
+Product : public void setQuantity(int quantity)
+Inventory : private Product[] products
+Inventory : public Product[] getProducts()
+Inventory : public void setProducts( Product[] products )
+App : public static void main(String[] args) throws IOException
+App : public static void mainLoop(Product[] P, Scanner scan)
+App : public static Product searchProduct(Product[] P, String name)
+App : public static void printProduct(Product p)
+AppTest : void searchProduct()
+@enduml
