@@ -1,0 +1,17 @@
+@startuml
+StringCounter <|-- App
+App <|-- AppTest
+
+StringCounter : private String str
+StringCounter : private int count
+StringCounter : public StringCounter(String str)
+StringCounter : public String getStr()
+StringCounter : public int getCount()
+StringCounter : public void setStr(String str)
+StringCounter : public void setCount(int count)
+App : public static void main(String[] args) throws IOException
+App : public static ArrayList<StringCounter> createList(Scanner scan)
+App : public static void printFrequencies(ArrayList<StringCounter> strList)
+App : public static void printStars(int num)
+AppTest : void createList()
+@enduml

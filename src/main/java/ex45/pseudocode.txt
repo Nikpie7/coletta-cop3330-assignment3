@@ -3,7 +3,7 @@
 
 -----------------------------------------------------------
 
-Exercise 44 will be all contained within one class, App, which
+Exercise 45 will be all contained within one class, App, which
 contains five functions
 
 The program's objective is to take in a text file as input, store

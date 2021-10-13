@@ -1,0 +1,48 @@
+    UCF COP3330 Fall 2021 Assignment 3 Pseudocode
+            Copyright 2021 Nikolai Coletta
+
+-----------------------------------------------------------
+
+Exercise 46 will be all contained within two classes, App and
+StringCounter
+
+The program's objective is to take in a text file as input, store
+each unique word as a StringCounter object, and track the number
+of times each word repeated. Then, it will output the frequency data
+in a sorted histogram.
+
+pseudocode:
+
+App {
+    public static void main(String[] args) throws IOException
+        //reads in the input file
+        //stores local variables
+        //runs other methods
+
+    ArrayList<StringCounter> createList(Scanner scan)
+        //creates a StringCounter ArrayList from each line of the input
+        //returns created ArrayList
+
+    void printFrequencies(ArrayList<StringCounter> strList)
+        //takes in StringCounter ArrayList and prints it into a histogram
+        //output is formatted
+        //StringCounter's are printed from the greatest frequency to least frequent;
+        //calls printStars to print the quantities
+
+    void printStars(int num)
+        //recursive function that prints out a "*" symbol for each num
+}
+
+StringCounter {
+    //stores local private variables for a string, and a counter
+
+    public StringCounter(String str)
+        //basic constructor setting str to the local string
+        //sets the counter to 1 be default
+
+    //the following are getter and setter variables for controlling local variables
+    String getStr()
+    int getCount()
+    void setStr(String str)
+    void setCount(int count)
+}
