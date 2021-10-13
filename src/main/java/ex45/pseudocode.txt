@@ -1,0 +1,36 @@
+     UCF COP3330 Fall 2021 Assignment 3 Pseudocode
+            Copyright 2021 Nikolai Coletta
+
+-----------------------------------------------------------
+
+Exercise 44 will be all contained within one class, App, which
+contains five functions
+
+The program's objective is to take in a text file as input, store
+each line into an arrayList of strings, ask the user for the output
+file name, and then change all instances of "utilize" in the file
+to "use", and finally output the result into a text file.
+
+pseudocode:
+
+App {
+    public static void main(String[] args) throws IOException
+        //reads in the input file
+        //stores local variables
+        //runs other methods
+
+    public static ArrayList<String> createList(Scanner scan)
+        //creates an arraylist from all lines of a scanner
+        //returns created arraylist
+
+    public static String getFileName(Scanner scan)
+        //prompts user for the filename
+        //returns received filename
+
+    public static ArrayList<String> replaceUtilize(ArrayList<String> input)
+        //goes through entire arraylist and replaces each "utilize" with "use"
+        //returns adjusted arraylist
+
+    public static void writeList(FileWriter output, ArrayList<String> text) throws IOException
+        //outputs the arraylist of strings to the fileWriter
+}
